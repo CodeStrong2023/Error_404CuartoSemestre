@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('images/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#seleccionar-personaje, #seleccionar-ataque, #mensajes, #reiniciar {
+    margin-top: 200px;
+}
+
+.vida-container {
+    margin: 10px 0;
+}
+
+progress {
+    width: 200px;
+    height: 20px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #333;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 15px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50;
+    border-radius: 15px;
+}
+
+.boton-ataque {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.boton-ataque:hover {
+    background-color: #555;
+}
+
+.personaje-imagen {
+    width: 400px;
+    height: 400px;
+    image-rendering: crisp-edges; /* Asegura que la imagen no se vea borrosa */
+    image-rendering: pixelated; /* Asegura que la imagen no se vea borrosa */
+    transition: transform 0.3s;
+}
+
+.personaje-imagen:hover {
+    transform: scale(1.2);
+}
+
+#personajes-batalla {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -200px;
+}
+
+.personaje-batalla-imagen {
+    width: 400px;
+    height: 400px;
+}
+
+.personaje-opcion {
+    display: inline-block;
+    margin: 80px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personaje-opcion input[type="radio"] {
+    display: none; /* Oculta los botones de radio */
+}
+
+.personaje-opcion img {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    border: 2px solid transparent; /* Borde por defecto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.personaje-opcion input[type="radio"]:checked + label img {
+    border: 2px solid #ffcc00; /* Color del borde cuando está seleccionado */
+    transform: scale(1.1); /* Escala la imagen al seleccionarla */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombra alrededor de la imagen */
+}
+
+/* Estilo para el botón de selección de personaje */
+#boton-personaje {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    border: 2px solid gold; /* Borde dorado */
+    color: gold; /* Texto dorado */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Bloque en línea */
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 20px 0; /* Espacio superior e inferior */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5); /* Sombra dorada */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+#boton-personaje:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Fondo dorado claro al pasar */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.7); /* Aumenta la sombra dorada */
+}
+
+#boton-personaje:active {
+    background-color: rgba(255, 215, 0, 0.4); /* Fondo dorado oscuro al hacer clic */
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+    box-shadow: 0 2px 15px rgba(255, 215, 0, 0.4); /* Sombra más tenue al hacer clic */
+}
+
+
+.imagen-victoria {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+#mensaje-victoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
