@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Casero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Sabores Caseros</h1>
+    </header>
+
+    <main>
+        <div id="productos"></div>
+    </main>
+    
+
+        <!-- Botón del carrito en la esquina inferior derecha -->
+        <!-- Carrito circular con imagen de hamburguesa y contador -->
+<div id="carrito">
+    <img src="images/carrito.jpg" alt="Carrito" class="carrito-img">
+    <span id="cantidad-carrito">0</span> <!-- Contador del carrito -->
+</div>
+
+    
+        <!-- Ventana emergente (modal) del carrito -->
+        <div id="modal-carrito" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Carrito de Compras</h3>
+                <ul id="lista-carrito"></ul>
+                <button id="vaciar-carrito" class="modal-button">Vaciar carrito</button>
+                <button id="comprar-carrito" class="modal-button">Comprar</button>
+
+            </div>
+        </div>
+            <footer>
+                <p>&copy; 2024 SABORES CASEROS. Todos los derechos reservados.</p>
+                <p>Contáctanos: <a href="TuCaserin@porsiempre.com" style="color: #fff; text-decoration: none;">TuCaserin@porsiempre.com</a></p>
+            </footer>
+            
+    <script src="script.js"></script>
+</body>
+</html>

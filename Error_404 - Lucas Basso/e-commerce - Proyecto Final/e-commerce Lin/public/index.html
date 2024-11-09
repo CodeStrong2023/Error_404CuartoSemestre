@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Essence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icons.png">
+</head>
+<body>
+    <header>
+        <h1>Pure Essence</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#carrusel">Inicio</a></li>
+            <li><a href="#text-productos">Productos</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+        <form id="search-form" class="search-form" onsubmit="return false;">
+            <input type="text" id="search-input" placeholder="🔎 Buscar productos... " required>
+            <button type="submit">Buscar</button>
+        </form>
+    </nav>
+
+    <!-- Carrusel de mensajes y promociones -->
+    <div id="carrusel">
+        <div class="carrusel-inner">
+            <div class="carrusel-item">
+                <div class="carrusel-item-content">
+                    <img src="images/oferta1-removebg-preview.png" alt="Bienvenida">
+                    <div class="carrusel-text">
+                        <h2>¡Bienvenido a Pure Essence!</h2>
+                        <p>Descuentos exclusivos en productos del Carrusel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel-item">
+                <div class="carrusel-item-content">
+                    <img src="images/aguamicelar.png" alt="Descuento de Temporada">
+                    <div class="carrusel-text">
+                        <h2>Descuentos de temporada</h2>
+                        <p>¡Hasta 50% de descuento en artículos Faciales!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel-item">
+                <div class="carrusel-item-content">
+                    <img src="images/crema_exfoliante_para_pies.png" alt="Nuevas llegadas">
+                    <div class="carrusel-text">
+                        <h2>¡Nuevas llegadas de la temporada!</h2>
+                        <p>Descubre los productos más recientes en nuestro catálogo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botones de navegación -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    
+    <main>
+        <div class="contenedor-texto">
+            <h2 id="text-productos">Nuestros Productos</h2>
+        </div>
+        
+        <div id="productos"></div>
+    </main>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Pure Essence, nuestra historia comienza con una simple pasión: el deseo de ayudar a las personas a cuidar de su piel de manera efectiva y natural. Fundada en 2024, nuestra misión es ofrecer productos de belleza de alta calidad que sean accesibles para todos.</p>
+        <p>Nos comprometemos a utilizar ingredientes naturales y sostenibles, garantizando que cada producto no solo beneficie tu piel, sino también al planeta. Creemos que todos merecen sentirse seguros y radiantes, independientemente de su tipo de piel.</p>
+        <p>Nuestro equipo está formado por apasionados expertos en cuidado de la piel que se dedican a investigar y desarrollar fórmulas innovadoras. Trabajamos en colaboración con dermatólogos para asegurarnos de que nuestros productos no solo sean efectivos, sino también seguros.</p>
+        <p>¡Únete a nuestra comunidad! Síguenos en redes sociales y descubre consejos de belleza, promociones exclusivas y más. Juntos, podemos hacer que cada día sea un buen día para tu piel.</p>
+    </section>
+
+    <!-- Botón del carrito en la esquina inferior derecha -->
+    <div id="carrito">
+        <img src="images/anadir-al-carrito.png" alt="Carrito" class="carrito-img">
+        <span id="cantidad-carrito">0</span> <!-- Contador del carrito -->
+    </div>
+
+    <!-- Ventana emergente (modal) del carrito -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-text">Carrito</h3>
+            <ul id="lista-carrito"></ul>
+            <button id="vaciar-carrito" class="modal-button">Vaciar carrito</button>
+            <button id="comprar" class="modal-button">Comprar</button> <!-- Botón de comprar -->
+        </div>
+    </div>
+
+    <!-- Footer de la página -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contáctanos</h3>
+                <p>Teléfono: +549 2604123456</p>
+                <p>Email: PureEssence@gmail.com</p>
+                <p>Dirección: Av. Mitre 333, San Rafael, Mendoza</p>
+            </div>
+            <div class="social-media">
+                <h3>Síguenos</h3>
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://twitter.com">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pure Essence. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
