@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA LEYENDA DE AANG: AVATAR</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="avatar.js" defer></script>
+</head>
+<body>
+    <h1>AVATAR 🔥💧🌱🌪️</h1>
+
+    <section id="seleccionar-personaje">
+        <h2>Elige tu Personaje</h2>
+
+        <div class="personaje-opcion">
+            <input type="radio" name="personaje" id="zuko" />
+            <label for="zuko">
+                <img src="images/zuko.png" alt="Zuko" class="personaje-imagen" />
+                Zuko
+            </label>
+        </div>
+
+        <div class="personaje-opcion">
+            <input type="radio" name="personaje" id="katara" />
+            <label for="katara">
+                <img src="images/katara.png" alt="Katara" class="personaje-imagen" />
+                Katara
+            </label>
+        </div>
+
+        <div class="personaje-opcion">
+            <input type="radio" name="personaje" id="aang" />
+            <label for="aang">
+                <img src="images/aang.png" alt="Aang" class="personaje-imagen" />
+                Aang
+            </label>
+        </div>
+
+        <div class="personaje-opcion">
+            <input type="radio" name="personaje" id="toph" />
+            <label for="toph">
+                <img src="images/toph.png" alt="Toph" class="personaje-imagen" />
+                Toph
+            </label>
+        </div>
+
+        <button id="boton-personaje">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque" style="display:none;">
+        <h2>¡Hora de atacar!</h2>
+        <p>Selecciona tu ataque entre las siguientes opciones:</p>
+        <div id="personajes-batalla">
+            <div id="personaje-jugador-container">
+                <p>Tu personaje: <span id="personaje-jugador"></span></p>
+                <img id="imagen-jugador" class="personaje-batalla-imagen" src="" alt="" />
+            </div>
+            <div id="personaje-enemigo-container">
+                <p>Personaje enemigo: <span id="personaje-enemigo"></span></p>
+                <img id="imagen-enemigo" class="personaje-batalla-imagen" src="" alt="" />
+            </div>
+        </div>
+        <p>Tu personaje tiene <span id="vidas-jugador">3</span> vidas</p>
+        <div class="vida-container">
+            <progress id="barra-vida-jugador" value="3" max="3"></progress>
+        </div>
+        <p>El personaje del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+        <div class="vida-container">
+            <progress id="barra-vida-enemigo" value="3" max="3"></progress>
+        </div>
+        <p>
+            <button class="boton-ataque" id="boton-punio">Puño ✊</button>
+            <button class="boton-ataque" id="boton-patada">Patada 🦶</button>
+            <button class="boton-ataque" id="boton-barrida">Barrida 👣</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+        <p id="mensaje-batalla"></p>
+    </section>
+
+    <section id="reiniciar" style="display:none;">
+        <div id="mensaje-victoria">
+            <p id="texto-victoria"></p>
+            <img id="imagen-victoria" src="" alt="Imagen de victoria" class="imagen-victoria" />
+        </div>
+        <button id="boton-reiniciar">Reiniciar</button>
+    </section>
+</body>
+</html>
